@@ -98,6 +98,6 @@ function winner(player) {
     player1.disabled = true;
     player2.disabled = true;
     result.innerText = player;
-    h3.nsertAdjacentElement('beforeend', result);
+    h3.insertAdjacentElement('beforeend', result);
 }
 
