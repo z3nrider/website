@@ -1,27 +1,62 @@
+/*
+=============
+COLOR PALETTE
+=============
+*made up names*
+dark gray-blue 3d5a80
+gray-blue 98c1d9
+light gray-blue e0fbfc
+salmon ee6c4d
+blackish 293241
+
+*/
+
 html {
     height: 100%;
 }
 
 body {
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    max-width: 300px;
+    background-color: #293241;
+    max-width: 700px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ee6c4d;
     margin: auto;
     margin-top: 1em;
+    padding: 2em;
 }
 
 img {
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px;
-    box-shadow: 1px 2px #073b4c;
+    box-shadow: 1px 2px #3d5a80;
     margin-top: 1em;
 }
 
 h1 {
-    margin: 0px;
-    font-size: medium;
+    color: #293241;
     text-align: center;
+    background-color: #ee6c4d;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #ee6c4d;
+}
+
+h4 {
+    text-align: center;
+    font-size: x-large;
+    margin: 10px;
+}
+
+p {
+    max-width: 700px;
+    margin: auto;
+    font-size: large;
+    padding: 20px;
 }
 
 div {
@@ -29,14 +64,13 @@ div {
     border-radius: 10px;
     padding: 5px;
     margin-top: 5px;
-    background-color: #97daf1;
+    background-color: #98c1d9;
     box-shadow: 1px 2px #073b4c;
 }
 
 #buttons {
     border: none;
     box-shadow: none;
-
 }
 
 
@@ -58,4 +92,49 @@ select {
     border-radius: 5px;
     margin-left: 1em;
     border: 2px solid;
+}
+
+table {
+    max-width: 750px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #001219;
+}
+
+tr:nth-of-type(odd) {
+    background: #98c1d9;
+}
+
+tr:nth-of-type(even) {
+    background: #e0fbfc;
+}
+
+th {
+    background: #3d5a80;
+    color: #e0fbfc;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ca6702;
+    text-align: left;
+    font-size: 18px;
+}
+
+#ping-pong-app {
+    max-width: 400px;
+    margin: auto;
+}
+
+#ping-pong-content {
+    color: black;
+    text-align: center;
+    font-size: larger;
+}
+
+hr {
+    border: 1px solid #ee6c4d;
 }

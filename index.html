@@ -12,34 +12,121 @@
 </head>
 
 <body>
-    <img
-        src="https://images.unsplash.com/photo-1584813539806-2538b8d918c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80">
+    <section>
+        <h1>Hey there.</h1>
+        <h2>My name is Brandon Koehler, a student at Oregon State University studying Computer Science.</h2>
+        <table>
+            <thead>
+                <th>Education / Work</th>
+                <th>Years</th>
+                <th>Degree Earned</th>
+            </thead>
+            <tbody>
+                <tr id="in-progress">
+                    <td>Oregon State University</td>
+                    <td>2022 - present</td>
+                    <td>Bachelor of Science, Computer Science*</td>
+                </tr>
+                <tr>
+                    <td>Northwestern University</td>
+                    <td>2012 - 2014</td>
+                    <td>Master of Music, Music Performance</td>
+                </tr>
+                <tr>
+                    <td>Ohio Wesleyan University</td>
+                    <td>2008 - 2012</td>
+                    <td>Bachelor of Music, Music Performance</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>* <em>in progress</em></p>
+        <h2>A short blurb:</h2>
+        <p>Originally my path was laid out for me since middle school, where my passion was music. I went on to study
+            music
+            in college and joined the US Army as an Active Duty musician.
+        </p>
+        <p>Towards the end of my Army career, my passions
+            changed and I wanted to study something else: computer science! Anyway, here is a list of courses I've taken
+            at
+            OSU:</p>
+        <table>
+            <thead>
+                <th>Course Name</th>
+                <th>Skills Learned</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Intro to CS I & II</td>
+                    <td>Fundamental programming concepts, Python</td>
+                </tr>
+                <tr>
+                    <td>Discrete Mathematics</td>
+                    <td>Logic principles, permutations and combinations, recursion, graph theory</td>
+                </tr>
+                <tr>
+                    <td>Computer Architecture & Assembly Language</td>
+                    <td>Emphasis on x86 architecture, addressing, stacks, argument passing,
+                        arithmetic operations, decisions, macros, modularization, linkers, and debuggers</td>
+                </tr>
+                <tr>
+                    <td>Data Structures</td>
+                    <td>Abstract data types, complexity analysis</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML, CSS, JavaScript, React, Node.js, Express and MongoDB</td>
+                </tr>
+                <tr id="in-progress">
+                    <td>Analysis of Algorithms*</td>
+                    <td>Recurrence relations, combinatorics, recursive algorithms, proofs of correctness</td>
+                </tr>
+                <tr id="in-progress">
+                    <td>Intro to Databases*</td>
+                    <td>Design a simple database, learn good database design principles</td>
+                </tr>
+                <tr id="in-progress">
+                    <td>Software Engineering I*</td>
+                    <td>Software requirements specification, functional requirements, non-functional requirements,
+                        quality
+                        attributes, microservices architecture, software process models, UML diagramming, project
+                        management, usability, paper prototyping, cognitive style heuristics, software
+                        design validation, Agile methods, software development lifecycle,
+                        teamwork
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>* <em>in progress</em></p>
+        <hr>
+        <p>Projects will be added below in the future!</p>
+        <hr>
+    </section>
+    <section id="ping-pong-app">
+        <h3>Ping-Pong Score Tracker</h3>
+        <img
+            src="https://images.unsplash.com/photo-1584813539806-2538b8d918c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80">
+        <div id="ping-pong-content">
+            <label for="numplayers">Number of rounds:</label>
 
-    <div>
-        <h1 id="gameTitle">Ping-Pong Tracker</h1>
-    </div>
-    <div>
-        <h2>
-            <span id="score1">0</span> to <span id="score2">0</span>
-        </h2>
-        <h3 id="winnerText"></h3>
-        <label for="numplayers">Number of rounds:</label>
-
-        <select name="numplayers" id="numplayers">
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
+            <select name="numplayers" id="numplayers">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
 
 
-        </select>
-        <p id="instructions">Use the buttons below to keep score.</p>
-        <div id="buttons">
+            </select>
+            <h4>
+                <span id="score1">0</span> to <span id="score2">0</span>
+            </h4>
+            <p id="instructions">Use the buttons below to keep score.</p>
+            <div id="buttons">
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

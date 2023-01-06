@@ -5,7 +5,7 @@ const score1 = document.querySelector('#score1');
 const score2 = document.querySelector('#score2');
 const resetButton = document.createElement('button');
 const h2 = document.querySelector('h2');
-const h3 = document.querySelector('#winnerText');
+const h4 = document.querySelector('h4');
 const result = document.createElement('p');
 
 
@@ -25,7 +25,7 @@ input.addEventListener('change', function (e) {
 })
 
 player1.innerText = '+1 Player1';
-player1.style.backgroundColor = "#17c3b2";
+player1.style.backgroundColor = "green";
 buttons.insertAdjacentElement('beforeend', player1);
 player1.addEventListener('click', function () {
     if (p1 === parseInt(scoreLimit) - 1) {
@@ -42,7 +42,7 @@ player1.addEventListener('click', function () {
 
 const player2 = document.createElement('button');
 player2.innerText = '+1 Player2';
-player2.style.backgroundColor = "#ffcb77";
+player2.style.backgroundColor = "yellow";
 buttons.insertAdjacentElement('beforeend', player2);
 player2.addEventListener('click', function () {
     if (p2 === parseInt(scoreLimit) - 1) {
@@ -59,7 +59,7 @@ player2.addEventListener('click', function () {
 
 
 resetButton.innerText = 'Reset';
-resetButton.style.backgroundColor = "#fe6d73";
+resetButton.style.backgroundColor = "red";
 buttons.insertAdjacentElement('beforeend', resetButton);
 
 resetButton.addEventListener('click', function () {
@@ -92,12 +92,11 @@ function scoreColor() {
 }
 
 
-
 // announces the winner of the game
 function winner(player) {
     player1.disabled = true;
     player2.disabled = true;
     result.innerText = player;
-    h3.insertAdjacentElement('beforeend', result);
+    h4.insertAdjacentElement('beforeend', result);
 }
 
