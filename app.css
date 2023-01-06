@@ -25,13 +25,6 @@ body {
     padding: 2em;
 }
 
-img {
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 1px 2px #3d5a80;
-    margin-top: 1em;
-}
-
 h1 {
     color: #293241;
     text-align: center;
@@ -126,6 +119,7 @@ th {
 
 #ping-pong-app {
     max-width: 400px;
+    min-width: 200px;
     margin: auto;
 }
 
@@ -133,6 +127,7 @@ th {
     color: black;
     text-align: center;
     font-size: larger;
+    margin: auto;
 }
 
 hr {
